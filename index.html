@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iwan Jaya Kebraon - Toko & Layanan Terpercaya</title>
+    <style>
+        /* Reset & Desain Dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f8fafc;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        /* Navigasi / Header */
+        header {
+            background-color: #0f172a;
+            color: #fff;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .header-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo h1 {
+            font-size: 24px;
+            color: #ef4444; /* Warna Merah Aksen */
+            font-weight: bold;
+        }
+        .logo span {
+            color: #fff;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ef4444;
+        }
+
+        /* Banner Utama (Hero) */
+        .hero {
+            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), 
+                        url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=1200') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: 0 20px;
+        }
+        .hero-content h2 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+        .hero-content p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #cbd5e1;
+        }
+        .btn-hubungi {
+            background-color: #ef4444;
+            color: #fff;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+            display: inline-block;
+        }
+        .btn-hubungi:hover {
+            background-color: #dc2626;
+        }
+
+        /* Bagian Konten Utama */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        section {
+            margin-bottom: 60px;
+            scroll-margin-top: 100px;
+        }
+        h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #0f172a;
+            position: relative;
+        }
+        h3::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 4px;
+            background-color: #ef4444;
+            margin: 10px auto 0 auto;
+            border-radius: 2px;
+        }
+
+        /* Grid Layanan */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .service-card {
+            background: #fff;
+            padding: 30px 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .service-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+        .service-card h4 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #0f172a;
+        }
+
+        /* Kontak & Lokasi */
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .contact-info p {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        .contact-info strong {
+            color: #0f172a;
+        }
+        .map-responsive {
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+            height: 0;
+            border-radius: 8px;
+        }
+        .map-responsive iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            border: 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0f172a;
+            color: #94a3b8;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>IWAN <span>JAYA</span></h1>
+            </div>
+            <nav>
+                <a href="#tentang">Tentang</a>
+                <a href="#layanan">Produk & Layanan</a>
+                <a href="#kontak">Hubungi Kami</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h2>Pelayanan Terbaik & Produk Berkualitas</h2>
+            <p>Hadir untuk memenuhi segala kebutuhan Anda di wilayah Kebraon dan sekitarnya.</p>
+            <a href="#kontak" class="btn-hubungi">Lihat Lokasi</a>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <section id="tentang">
+            <h3>Tentang Iwan Jaya</h3>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto; color: #475569;">
+                Iwan Jaya berkomitmen untuk memberikan pelayanan prima dan produk bermutu tinggi demi kepuasan setiap pelanggan kami. Dengan pengalaman dan dedikasi terbaik, kami siap menjadi solusi andalan bagi kebutuhan harian maupun usaha Anda.
+            </p>
+        </section>
+
+        <section id="layanan">
+            <h3>Produk & Layanan</h3>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📦</div>
+                    <h4>Produk Lengkap</h4>
+                    <p>Menyediakan variasi produk berkualitas tinggi pilihan untuk memenuhi standar kebutuhan Anda.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🤝</div>
+                    <h4>Pelayanan Ramah</h4>
+                    <p>Staf kami siap membantu memberikan informasi dan melayani Anda dengan sepenuh hati.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💰</div>
+                    <h4>Harga Bersaing</h4>
+                    <p>Penawaran harga terbaik yang bersahabat di kantong dengan kualitas yang tetap terjaga.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontak">
+            <h3>Kontak & Lokasi</h3>
+            <div class="contact-wrapper">
+                
+                <div class="contact-info">
+                    <p><strong>Alamat:</strong><br>Gg. Mangga No.9, Kebraon, Kec. Karangpilang, Surabaya, Jawa Timur 60222</p>
+                    <p><strong>No. Telepon / WhatsApp:</strong><br>+62 852-3502-9828</p>
+                    <p><strong>Jam Operasional:</strong><br>Setiap Hari (Senin – Minggu)<br>Pukul 09.00 – 21.00 WIB</p>
+                    <p style="margin-top: 25px;">
+                        <a href="https://wa.me/6285235029828" target="_blank" class="btn-hubungi" style="background-color: #25d366;">Hubungi via WhatsApp</a>
+                    </p>
+                </div>
+
+                <div class="map-responsive">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.2520336758414!2d112.6738982!3d-7.3255146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fd923cb1b1f5%3A0x44d7d52f3a647636!2sIwan%20Jaya!5e0!3m2!1sid!2sid!4v1715783000000!5m2!1sid!2sid" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Iwan Jaya Kebraon. Hak Cipta Dilindungi.</p>
+    </footer>
+
+</body>
+</html>
